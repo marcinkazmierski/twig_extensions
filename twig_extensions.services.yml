@@ -1,0 +1,13 @@
+services:
+  twig_extensions.twig.aa:
+    arguments: ['@renderer']
+    class: Drupal\twig_extensions\TwigExtension\RenderImage
+    tags:
+      - { name: twig.extension }
+
+
+  twig_extensions.twig.b:
+    arguments: ['@renderer']
+    class: Drupal\twig_extensions\TwigExtension\CustomTwigExtension
+    tags:
+      - { name: twig.extension }

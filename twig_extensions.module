@@ -1,0 +1,14 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function twig_extensions_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        case 'help.page.twig_extensions':
+            return t('<h2>Lorem ipsum generator for Drupal.</h2>');
+    }
+}

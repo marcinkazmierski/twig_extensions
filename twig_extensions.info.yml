@@ -1,0 +1,6 @@
+# twig_extensions
+name: Twig extensions
+type: module
+description: Custom twig extensions module
+package: Custom
+core: 8.x
