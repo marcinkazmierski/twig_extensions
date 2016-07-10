@@ -1,13 +1,19 @@
 services:
-  twig_extensions.twig.aa:
+  twig_extensions.twig.RenderImage:
     arguments: ['@renderer']
     class: Drupal\twig_extensions\TwigExtension\RenderImage
     tags:
       - { name: twig.extension }
 
 
-  twig_extensions.twig.b:
+  twig_extensions.twig.CustomTwigExtension:
     arguments: ['@renderer']
     class: Drupal\twig_extensions\TwigExtension\CustomTwigExtension
+    tags:
+      - { name: twig.extension }
+
+  twig_extensions.twig.RemoveHtmlComments:
+    arguments: ['@renderer']
+    class: Drupal\twig_extensions\TwigExtension\RemoveHtmlComments
     tags:
       - { name: twig.extension }
